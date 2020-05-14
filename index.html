@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Poppins:wght@600&family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- lightbox -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" rel="stylesheet">
+  
+</head>
+<!-- head要素 -->
+
+<!-- body要素 -->
+<body>
+  <!-- body要素 -->
+  <main>
+    <!-- headerここから -->
+    <div class="wrapper">
+      <header>
+        <div class="header"> 
+          <div class="icon">
+            <a href="#">
+              <div class="logo">
+                <div class="bluewhite">
+                </div>
+              </div>
+            </a>
+          </div>
+          <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+          <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+              <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>  
+        </div>
+      </header>
+    </div>
+
+    <!-- headerここまで -->
+
+    <!-- カルーセルスライド -->
+    <div class="image-container">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="3500">
+        <!-- スライドさせる画像の設定 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/aurora.png" alt="オーロラ">
+          </div><!-- /.carousel-item -->
+          <div class="carousel-item">
+            <img src="img/lofoten.jpg" alt="">
+          </div>  
+          <div class="carousel-item">
+            <img src="img/david.jpg" alt="">
+          </div><!-- /.carousel-item -->
+        </div><!-- /.carousel-inner -->
+      </div><!-- /.carousel -->
+      <!-- カルーセルスライド -->
+      <div class="text">
+        <p>
+          <span id="ityped"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="profile" id="profile">
+      <h1 class="title" data-aos="fade-in" data-aos-duration="2000">PROFILE</h1>
+      <div class="outer">
+        <div class="photo" data-aos="fade-right" data-aos-duration="1500">
+          <p>
+            <img src="img/kyoryu.png" alt="" width="100%">
+          </p>
+        </div>
+        <div class="about" data-aos="fade-right" data-aos-duration="1500">
+          <div>
+            <h4>名前：ジョン</h4>
+          </div>
+          <div>
+            <h4>経歴：1999年11月26日生まれ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大学3年生</h4>
+          </div>
+          <div>
+            <h4>趣味：サッカー、旅行</h4>
+          </div>  
+        </div>
+      </div>
+
+    </div>
+      
+    <div class="group" id="skill">
+
+      <h1 class="title-border" data-aos="fade-down" data-aos-duration="1500">SKILL</h4>
+      <div class="skill">
+        <div class="item" data-aos="flip-left">
+          <h3>HTML5</h3>
+          <div class="icon1" style="color: red;">
+            <i class="fab fa-html5 fa-4x"></i>
+          </div>  
+        </div>
+        <div class="item" data-aos="flip-right">
+          <h3>CSS3</h3>
+          <div class="icon1" style="color: rgb(0, 110, 255);">
+            <i class="fab fa-css3-alt fa-4x"></i>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-zoom-in" data-aos-duration="3000">
+          <h3>Bootstrap</h3>
+          <div class="icon1">
+            <i class="fab fa-bootstrap fa-4x" style="color: purple;"></i>
+          </div>
+        </div>
+      </div>
+        
+      <div class="skill">
+        <div class="item" data-aos="fade-in" data-aos-easing="linear"
+        data-aos-duration="1500">
+          <h3>JavaScript</h3>
+          <div class="icon1" style="color: yellow;">
+            <i class="fab fa-js fa-4x"></i>
+          </div>  
+        </div>
+        <div class="item"  data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <h3>jQuery</h3>
+          <div class="icon1" style="color: rgb(0, 110, 255);">
+            <img src="https://img.icons8.com/ios/50/000000/jquery.png" style="width: 53px; height: 60px;">
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">
+          <h3>WordPress</h3>
+          <div class="icon1">
+            <i class="fab fa-wordpress fa-4x" style="color: rgb(6, 6, 80)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 作品ここから　 -->
+    <div class="box">
+
+      <section class="work" id="works" data-aos="fade-in" data-aos-easing="linear"
+            data-aos-duration="1500">
+        <h1 class="worktitle">WORKS</h1>
+        <div class="portfolio">
+          <div class="image">
+            <a href="img/original.png">
+            <img src="img/original.png" alt="">
+            </a>
+            <a href="img/original.png" data-lightbox="abc">
+            <div class="mask">
+              <div class="caption">シンプルなデザインです</div>
+            </div></a>
+          </div>
+          <div class="image">
+            <a href="img/port.png">
+            <img src="img/port.png" alt="">
+            </a>
+            <a href="img/port.png" data-lightbox="abc">
+            <div class="mask">
+              <div class="caption">自作サイトです<br>製作期間：2日<br>
+            </div></a>
+          </div>
+        </div>
+      </section>
+      <!-- 作品ここまで -->
+    </div>
+
+    <div class="area">
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853398555!2d139.76493611555088!3d35.68124053757847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1585990534502!5m2!1sja!2sjp" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+
+      <!-- アプリとSNS -->
+      <div class="footer" id="contact">
+        <div class="block">
+          <h2>CONTACT</h2>
+          <p>TwitterのDMよりご連絡お待ちしております</p>
+          <div class="sns">
+            <a href="https://twitter.com/steg50">
+              <div class="inner">
+                <div class="twiicon">
+                  <i class="fab fa-twitter fa-4x"></i>
+                </div>
+                <p class="name">Twitter</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        ©2020 Yusaku's All Rights Reserved
+      </footer>
+    </div>
+  </main>
+  
+  <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+      <!-- type.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ityped/1.0.3/index.min.js"></script>
+      
+      <script>
+        ityped.init(document.querySelector("#ityped"), {
+          strings: ["My name is Yusaku.", 'Welcome to my portfolio!'],
+          //表示させる文字
+          typeSpeed: 100, //default
+          //表示する時のスピード
+          backSpeed: 100, //default
+          //戻る時のスピード
+          startDelay: 500, //default
+          //スタート時の遅延時間
+          backDelay: 500, //default
+          //戻る時の遅延時間
+          loop: true, //default
+          //ループの有無   
+          showCursor: true, //default
+          //カーソル表示の有無   
+          cursorChar: "|", //default
+          //カーソルの形状
+          onFinished: function(){}
+        })
+      </script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+        
+</body>    
+</html>
+
+        
